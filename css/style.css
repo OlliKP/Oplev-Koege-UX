@@ -63,3 +63,13 @@ li a:hover:not(.active) {
     background-color: white;
     color: #04AA6D;
 }
+.imgs{
+}
+
+.show-img{
+    display: block;
+}
+
+.hide-img{
+    display: none;
+}
