@@ -4,8 +4,9 @@
     --thirdcolor: #f3f3f3;
     --footercolor: #11403d;
     --black: #000000;
-    --innershdw: inset 3px 4px 6px rgb(0, 0, 0.3);
-    --outershdw: 3px 4px 6px rgb(0, 0, 0.3);
+    --innershdw: inset 3px 4px 6px rgb(0, 0, 0, 0.3);
+    --outershdw: 2px 2px 5px rgb(0, 0, 0, 0.3);
+    --borderradius: 20px;
     --txtcolor1: #000000;
     --txtcolor2: #707070;
 }
@@ -40,10 +41,6 @@ li a {
     position: relative;
     top: 0;
     transition: top ease 0.3s;
-}
-  
-li a:hover:not(.active) {
-    top: -3px;
 }
   
 .active {
@@ -88,22 +85,50 @@ li a:hover:not(.active) {
     font-size: 0.84375rem;
     color: var(--txtcolor2)
 }
+
+.spisesteder-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: var(--txtcolor2) solid 1px;
+  margin-bottom: 2rem;
+}
 /* Dropdown menu */
 .dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    background-color: var(--secondarycolor);
+    box-shadow: var(--outershdw);
+    border-radius: var(--borderradius);
+    padding-inline: auto;
+    padding-block: 1rem;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
     border: none;
     cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+    color: var(--black);
   }
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #04AA6D;
+
+  .arrow {
+    margin-left: 2rem;
+    align-items: center;
   }
+
   .dropdown {
     position: relative;
     display: inline-block;
+    display: flex;
+    justify-content: center;
   }
+
+  .extra-margin {
+    margin-bottom: 9rem;
+  }
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -116,27 +141,23 @@ li a:hover:not(.active) {
     .sort-slider {
         display: none;
         position: absolute;
+        flex-direction: column;
+        width: 100%;
         background-color: #f1f1f1;
+        text-transform: uppercase;
+        font-size: 2rem;
         min-width: 160px;
         overflow: auto;
+        border-radius: var(--borderradius);
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        font-weight: 700;
       }
-    .sortslider a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-    .dropdown a:hover {
-        background-color: #ddd;
-    }
+
 
 .spisesteder-h1 {
-    font-size: 2rem;}
-  
-  .show {
-    display: block;
+    font-size: 2rem;
+    text-align: center;
   }
 
 .show-element{
@@ -172,12 +193,21 @@ li a:hover:not(.active) {
   display: none;
 }
 
+.show-flex{
+  display: block;
+  display: flex;
+}
+
 /* ------ MEDIA QUERY ------ */
 
 @media only screen and (min-width: 960px) {
     .dropdown {
       display: none;
     }
+
+    li a:hover:not(.active) {
+      top: -3px;
+  }
 
     /* Sort-Slider */
 .sort-slider {

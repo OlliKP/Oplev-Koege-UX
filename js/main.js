@@ -59,10 +59,15 @@ $(".sort-cafe").click(function () {
 });
 
 
+/*dropdown menu ekstra margin-bottom*/
+$(".dropbtn").click(function () {
+  $(".dropbtn").addClass("extra-margin");
+});
+
 /*dropdown menu function*/
 
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("show-flex");
   }
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
