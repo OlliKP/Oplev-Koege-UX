@@ -8,6 +8,8 @@
     --black: #000000;
     --innershdw: inset 3px 4px 6px rgb(0, 0, 0.3);
     --outershdw: 3px 4px 6px rgb(0, 0, 0.3);
+    --txtcolor1: #000000;
+    --txtcolor2: #707070;
     --mainfont: 'Lato', sans-serif;
 }
 
@@ -90,6 +92,38 @@ nav ul li a{
 
 
 /* Navbar slutter */
+
+h1{
+    font-size: 2rem;
+    font-family: var(--mainfont);
+    text-align: center;
+    margin: 1rem;
+    padding: 0.4em;
+    border-bottom: 1.5px solid rgb(177, 177, 177);
+}
+
+/* Styling til UL'en (Brødkrummesti)*/
+ul.breadcrumb{
+    padding: 10px 16px;
+    list-style: none;
+}
+
+/* Brødkrummesti kører på en lige linje */
+ul.breadcrumb li{
+    display: inline;
+}
+
+/* Laver / mellem alle a-tags */
+ul.breadcrumb li+li:before{
+    padding: 8px;
+    color: var(--black);
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a:hover{
+    color: var(--txtcolor1);
+    text-decoration: none;
+}
 
 @media screen and (min-width: 8000px){
     body {
