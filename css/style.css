@@ -83,3 +83,13 @@ li a:hover:not(.active) {
     font-size: 0.84375rem;
     color: ;
 }
+.imgs{
+}
+
+.show-img{
+    display: block;
+}
+
+.hide-img{
+    display: none;
+}
