@@ -86,13 +86,10 @@ li a:hover:not(.active) {
     color: var(--txtcolor2)
 }
 
-.imgs{
-}
-
-.show-img{
+.show-element{
     display: block;
 }
 
-.hide-img{
+.hide-element{
     display: none;
 }

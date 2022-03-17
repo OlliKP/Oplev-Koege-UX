@@ -1,3 +1,5 @@
+// Sort Slider - Active Sort
+
 $(".sort-all").click(function () {
     $(".sort-all").addClass("active");
     $(".sort-family").removeClass("active");
@@ -30,29 +32,29 @@ $(".sort-cafe").click(function () {
 // Restaurant Categories
 
 $(".sort-all").click(function () {
-    $(".family").removeClass("hide-img");
-    $(".adult").removeClass("hide-img");
-    $(".cafe").removeClass("hide-img");
+    $(".family").removeClass("hide-element");
+    $(".adult").removeClass("hide-element");
+    $(".cafe").removeClass("hide-element");
 });
 
 $(".sort-family").click(function () {
-    $(".adult").addClass("hide-img");
-    $(".cafe").addClass("hide-img");
+    $(".adult").addClass("hide-element");
+    $(".cafe").addClass("hide-element");
 
-    $(".family").removeClass("hide-img");
+    $(".family").removeClass("hide-element");
 });
 
 $(".sort-adult").click(function () {
-    $(".family").addClass("hide-img");
-    $(".cafe").addClass("hide-img");
+    $(".family").addClass("hide-element");
+    $(".cafe").addClass("hide-element");
 
-    $(".adult").removeClass("hide-img");
+    $(".adult").removeClass("hide-element");
 });
 
 $(".sort-cafe").click(function () {
-    $(".adult").addClass("hide-img");
-    $(".family").addClass("hide-img");
+    $(".adult").addClass("hide-element");
+    $(".family").addClass("hide-element");
 
-    $(".cafe").removeClass("hide-img");
+    $(".cafe").removeClass("hide-element");
 });
 

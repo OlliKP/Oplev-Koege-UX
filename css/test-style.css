@@ -1,40 +1,40 @@
 .sort-slider {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 50px;
-    margin: auto;
-    position: relative;
-    background-color: #fff;
-    z-index: 7;
-    border-radius: 50px;
-    border: solid 1px;
-    }
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+  z-index: 7;
+  border-radius: 50px;
+  border: solid 1px;
+  margin: 0;
+}
 
-    .sort-slider li {
-      float: left;
-      width: 25%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      border-right: 0px;
-    }
+.sort-slider li {
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-right: 0px;
+  float: left;
+}
     
-    .sort-slider a {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-      color: black;
-      text-decoration: none;
-      position: relative;
-      font-size: 18px;
-      z-index: 9;
-      border-radius: 50px;
-      padding: 0;
-    }
+.sort-slider a {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  z-index: 9;
+  border-radius: 50px;
+  padding: 0;
+  display: flex;
+}
   
   .sort-slider a.active {
     background-color: #00BF6F;
@@ -71,9 +71,9 @@
 
   .show-img{
     display: block;
-}
+  }
 
-.hide-img{
+  .hide-img{
     display: none;
-}
+  }
 
