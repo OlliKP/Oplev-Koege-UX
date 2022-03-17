@@ -15,6 +15,38 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Styling  af content-bokse*/
+.content-container {
+  margin-top: 2rem;
+  height: 100rem;
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 5%;
+  padding: 2rem;
+}
+
+.content-box {
+  background-color: var(--secondarycolor);
+  border-radius: 15px;
+  height: fit-content;
+  box-shadow: var(--outershdw);
+  justify-content: center;
+  align-items: center;
+}
+.contentimg{
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: var(--outershdw);
+}
+.contenth{
+  text-align: center;
+}
+.contentp{
+  color: var(--txtcolor2);
+  padding: 0 1em 0.5em 1em;
+  line-height: 1.4em;
+}
+
 /* Topbar & Navbar */
 ul {
     list-style-type: none;
@@ -209,5 +241,10 @@ li a:hover:not(.active) {
     text-align: center;
     font-size: 4rem;
     margin-bottom: 3rem;
+  }
+  .content-container {
+    column-gap: 10%;
+    row-gap: 0;
+    grid-template-columns: 45% 45%;
   }
 }
