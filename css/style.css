@@ -1,3 +1,13 @@
+:root{
+    --maincolor: #00bf6f;
+    --secondarycolor: #ffffff;
+    --thirdcolor: #f3f3f3;
+    --footercolor: #11403d;
+    --black: #000000;
+    --innershdw: inset 3px 4px 6px rgb(0, 0, 0.3);
+    --outershdw: 3px 4px 6px rgb(0, 0, 0.3);
+}
+
 body {
     margin-inline: 22rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -62,4 +72,14 @@ li a:hover:not(.active) {
     padding-inline: 1.5rem;
     background-color: white;
     color: #04AA6D;
+}
+
+/* Spisesteder */
+.spisheader{
+    text-align: center;
+}
+.spisp{
+    text-align: center;
+    font-size: 0.84375rem;
+    color: ;
 }
