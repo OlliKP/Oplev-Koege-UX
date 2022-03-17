@@ -1,28 +1,21 @@
+:root{
+    --maincolor: #00bf6f;
+    --secondarycolor: #ffffff;
+    --thirdcolor: #f3f3f3;
+    --footercolor: #11403d;
+    --black: #000000;
+    --innershdw: inset 3px 4px 6px rgb(0, 0, 0.3);
+    --outershdw: 3px 4px 6px rgb(0, 0, 0.3);
+    --mainfont: 'Lato', sans-serif;
+}
+
 body {
-    margin-inline: 22rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #fff;
-}
-  
-li {
-    float: left;
-    border-right:1px solid rgba(132, 132, 132, 0.15);
-}
-  
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 7px 16px;
-    text-decoration: none;
-    position: relative;
-    top: 0;
-    transition: top ease 0.3s;
+@media screen and (min-width: 8000px){
+    body {
+        margin-inline: 15vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
