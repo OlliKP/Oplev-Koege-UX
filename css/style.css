@@ -97,7 +97,7 @@ li a:hover:not(.active) {
 }
 /* Dropdown menu */
 .dropbtn {
-    background-color: #3498DB;
+    background-color: #04AA6D;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -105,7 +105,7 @@ li a:hover:not(.active) {
     cursor: pointer;
   }
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: #04AA6D;
   }
   .dropdown {
     position: relative;
@@ -143,7 +143,7 @@ li a:hover:not(.active) {
     font-size: 2rem;
     .show {display: block;
     }
-    
+
 .show-element{
     display: block;
 }
