@@ -42,13 +42,15 @@
         </header>
 
       <!--Sorterings-bar-->
-      
-    <ul class="sort-slider">
-        <li> <a class="sort-all active">Alle</a></li>
-        <li> <a class="sort-family">Familie Venlig</a></li>
-        <li> <a class="sort-adult">For Voksne</a></li>
-        <li> <a class="sort-cafe">Caféer & Barer</a></li>
-    </ul>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Kategorier</button>
+        <ul id="myDropdown"class="sort-slider">
+            <li> <a class="sort-all active">Alle</a></li>
+            <li> <a class="sort-family">Familie Venlig</a></li>
+            <li> <a class="sort-adult">For Voksne</a></li>
+            <li> <a class="sort-cafe">Caféer & Barer</a></li>
+        </ul>
+    </div>
        
         
         <script src="js/jquery-3.6.0.js"></script>
