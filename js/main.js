@@ -10,18 +10,24 @@ $(".button2").click(function () {
     $(".billede1").addClass("hide-img");
     $(".billede3").addClass("hide-img");
     $(".billede4").addClass("hide-img");
+    
+    $(".billede2").removeClass("hide-img");
 });
 
 $(".button3").click(function () {
     $(".billede1").addClass("hide-img");
     $(".billede2").addClass("hide-img");
     $(".billede4").addClass("hide-img");
+
+    $(".billede3").removeClass("hide-img");
 });
 
 $(".button4").click(function () {
     $(".billede1").addClass("hide-img");
     $(".billede2").addClass("hide-img");
     $(".billede3").addClass("hide-img");
+
+    $(".billede4").removeClass("hide-img");
 });
 
 $(".buttonall").click(function () {
@@ -40,6 +46,5 @@ let diningPlaces = [
     {name: "Restaurant Malt", type: "adult"},
 ]
 
-const ul = document.querySelector('.sort-slider');
 
 

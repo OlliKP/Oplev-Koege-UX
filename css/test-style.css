@@ -57,6 +57,7 @@
     display: grid;
     grid-template-columns: 33.33% 33.34% 33.33%;
     grid-template-rows: 20%;
+   
   }
 
   .content-box {
@@ -67,3 +68,12 @@
     align-items: center;
     border: solid 1px;
   }
+
+  .show-img{
+    display: block;
+}
+
+.hide-img{
+    display: none;
+}
+
