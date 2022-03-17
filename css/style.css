@@ -6,6 +6,8 @@
     --black: #000000;
     --innershdw: inset 3px 4px 6px rgb(0, 0, 0.3);
     --outershdw: 3px 4px 6px rgb(0, 0, 0.3);
+    --txtcolor1: #000000;
+    --txtcolor2: #707070;
 }
 
 body {
@@ -81,8 +83,9 @@ li a:hover:not(.active) {
 .spisp{
     text-align: center;
     font-size: 0.84375rem;
-    color: var(--thirdcolor)
+    color: var(--txtcolor2)
 }
+
 .imgs{
 }
 
