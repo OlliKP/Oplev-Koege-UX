@@ -1,50 +1,63 @@
-$(".button1").click(function () {
-    $(".billede2").addClass("hide-img");
-    $(".billede3").addClass("hide-img");
-    $(".billede4").addClass("hide-img");
+// Sort Slider - Active Sort
 
-    $(".billede1").removeClass("hide-img");
+$(".sort-all").click(function () {
+  $(".sort-all").addClass("active");
+  $(".sort-family").removeClass("active");
+  $(".sort-adult").removeClass("active");
+  $(".sort-cafe").removeClass("active");
 });
 
-$(".button2").click(function () {
-    $(".billede1").addClass("hide-img");
-    $(".billede3").addClass("hide-img");
-    $(".billede4").addClass("hide-img");
-    
-    $(".billede2").removeClass("hide-img");
+$(".sort-family").click(function () {
+  $(".sort-all").removeClass("active");
+  $(".sort-family").addClass("active");
+  $(".sort-adult").removeClass("active");
+  $(".sort-cafe").removeClass("active");
 });
 
-$(".button3").click(function () {
-    $(".billede1").addClass("hide-img");
-    $(".billede2").addClass("hide-img");
-    $(".billede4").addClass("hide-img");
-
-    $(".billede3").removeClass("hide-img");
+$(".sort-adult").click(function () {
+  $(".sort-all").removeClass("active");
+  $(".sort-family").removeClass("active");
+  $(".sort-adult").addClass("active");
+  $(".sort-cafe").removeClass("active");
 });
 
-$(".button4").click(function () {
-    $(".billede1").addClass("hide-img");
-    $(".billede2").addClass("hide-img");
-    $(".billede3").addClass("hide-img");
-
-    $(".billede4").removeClass("hide-img");
+$(".sort-cafe").click(function () {
+  $(".sort-all").removeClass("active");
+  $(".sort-family").removeClass("active");
+  $(".sort-adult").removeClass("active");
+  $(".sort-cafe").addClass("active");
 });
 
-$(".buttonall").click(function () {
-    $(".billede1").removeClass("hide-img");
-    $(".billede2").removeClass("hide-img");
-    $(".billede3").removeClass("hide-img");
-    $(".billede4").removeClass("hide-img");
+
+// Restaurant Categories
+
+$(".sort-all").click(function () {
+  $(".family").removeClass("hide-element");
+  $(".adult").removeClass("hide-element");
+  $(".cafe").removeClass("hide-element");
 });
 
-let diningPlaces = [
-    {name: "Restaurant Arken", type: "adult"},
-    {name: "Café Vivaldi", type: "cafe"},
-    {name: "Restaurant Bone's", type: "family"},
-    {name: "Restaurant Tacos Locos", type: "family"},
-    {name: "Café Vinbar", type: "cafe"},
-    {name: "Restaurant Malt", type: "adult"},
-]
+$(".sort-family").click(function () {
+  $(".adult").addClass("hide-element");
+  $(".cafe").addClass("hide-element");
+
+  $(".family").removeClass("hide-element");
+});
+
+$(".sort-adult").click(function () {
+  $(".family").addClass("hide-element");
+  $(".cafe").addClass("hide-element");
+
+  $(".adult").removeClass("hide-element");
+});
+
+$(".sort-cafe").click(function () {
+  $(".adult").addClass("hide-element");
+  $(".family").addClass("hide-element");
+
+  $(".cafe").removeClass("hide-element");
+});
+
 
 /*dropdown menu function*/
 
