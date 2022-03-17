@@ -27,7 +27,7 @@
         </ul>
 
     <!--Header: Spisesteder-->
-        <header>
+        <header class="header-spisesteder hide-element">
             <h1 class="page-header spisheader">Spisesteder</h1>
             <p class="spisp spisp1">Er du på udkig efter lækre spisesteder, hyggelige cafeer eller blot en forfriskning, går du ikke forgæves i Køge. 
                 Hvad enten du ønsker en romantisk middag for 2, en familierestaurant eller take away,  så har Køge og omegn et rigtig godt 
@@ -41,21 +41,57 @@
             </p>
         </header>
 
-      <!--Sorterings knapper-->
-        <div>
-        <button class="btnslider buttonall">Alle</button>
-        <button class="btnslider button1">Familie venlig</button>
-        <button class="btnslider button2">For voksne</button>
-        <button class="btnslider button3">Caféer & Barer</button>
-        </div>
+    <h1 class="spisesteder-h1">Spisesteder</h1>
 
-        <div class="imgs">
-            <img class="billed1 billede1" src="img/oplev-koege.jpg" alt="Køge by fra fugleperspektiv">
-            <img class="billed2 billede2" src="img/oplev-koege.jpg" alt="Køge by fra fugleperspektiv">
-            <img class="billed3 billede3" src="img/oplev-koege.jpg" alt="Køge by fra fugleperspektiv">
-            <img class="billed4 billede4" src="img/oplev-koege.jpg" alt="Køge by fra fugleperspektiv">
+    <!--Sorterings-bar-->
+    <ul class="sort-slider">
+        <li> <a class="sort-all active">Alle</a></li>
+        <li> <a class="sort-family">Familie Venlig</a></li>
+        <li> <a class="sort-adult">For Voksne</a></li>
+        <li> <a class="sort-cafe">Caféer & Barer</a></li>
+    </ul>
 
-        </div>
+    <!--Mobile sort-->
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Kategorier</button>
+        <ul id="myDropdown"class="sort-slider">
+            <li> <a class="sort-all active">Alle</a></li>
+            <li> <a class="sort-family">Familie Venlig</a></li>
+            <li> <a class="sort-adult">For Voksne</a></li>
+            <li> <a class="sort-cafe">Caféer & Barer</a></li>
+        </ul>
+    </div>
+       
+    <!--Testboxes-->
+    <section class="content-container">
+            
+        <section class="content-box cafe">
+            <h2>Café Vivaldi</h2>
+        </section>
+
+        <section class="content-box adult">
+            <h2>Restaurant Arken</h2>
+        </section>
+
+        <section class="content-box family">
+            <h2>Restaurant Bone's</h2>
+        </section>
+
+        <section class="content-box family">
+            <h2>Restaurant Tacos Locos</h2>
+        </section>
+
+        <section class="content-box cafe">
+            <h2>Café Vinbar</h2>
+        </section>
+
+        <section class="content-box adult">
+            <h2>Restaurant Malt</h2>
+        </section>
+
+    </section>
+
+
         
         <script src="js/jquery-3.6.0.js"></script>
         <script src="js/main.js"></script>
