@@ -68,12 +68,3 @@
     align-items: center;
     border: solid 1px;
   }
-
-  .show-img{
-    display: block;
-  }
-
-  .hide-img{
-    display: none;
-  }
-
