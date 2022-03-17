@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+:root{
+    --maincolor: #00bf6f;
+    --secondarycolor: #ffffff;
+    --thirdcolor: #f3f3f3;
+    --footercolor: #11403d;
+    --black: #000000;
+    --innershdw: inset 3px 4px 6px rgb(0, 0, 0.3);
+    --outershdw: 3px 4px 6px rgb(0, 0, 0.3);
+    --txtcolor1: #000000;
+    --txtcolor2: #707070;
+    --mainfont: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigations bar begynder */
+
+/* Fas fa-bar svg'ets (burgermenu ikonet) indstillinger */
+.fas{
+    color: black;
+    font-size: 2rem;
+    line-height: 40px;
+    float: right;
+    padding: 0.3em;
+    padding-right: 0.5em;
+}
+
+/* Navbaren begynder */
+nav{
+    box-shadow: 2px 3px 6px rgb(140, 139, 139);
+    width: 100%;
+    padding: 0.1rem;
+}
+
+/* UL classen under "nav" */
+.navbar{
+    position: fixed;
+    background-color: var(--secondarycolor);
+    font-family: var(--mainfont);
+    padding: 0;
+}
+
+/* LOGO i navbaren */
+nav img{
+    padding: 0.2rem;
+}
+
+/* UL indstillinger, bl.a. gør at vi har en transition på vores menu */
+nav ul{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    text-align: left;
+    width: 100%;
+
+}
+
+/* List dekoration */
+nav ul li{
+    list-style-type: none;
+    color: black;
+    padding: 0.5em;
+    border-bottom: 1px solid rgb(237, 236, 236);
+    padding-top: 0.3em;
+}
+
+/* Når burgermenu'en kommer ned er det her hele a-tags dekoration */
+nav ul li a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+/* Checkbox, som er burgermenu'ens indstillinger der gør at vores menu kommer ned når man klikker */
+#checkbox{
+    display: none;
+}
+
+#checkbox:checked ~ nav ul{
+    max-height: 100%;
+    transition: all 0.5s;
+}
+
+
+/* Navbar slutter */
+
+h1{
+    font-size: 2rem;
+    font-family: var(--mainfont);
+    text-align: center;
+    margin: 1rem;
+    padding: 0.4em;
+    border-bottom: 1.5px solid rgb(177, 177, 177);
+}
+
+/* Styling til UL'en (Brødkrummesti) - 
+Taget fra: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+ul.breadcrumb{
+    padding: 15px 20px;
+    list-style: none;
+}
+
+/* Brødkrummesti kører på en lige linje */
+ul.breadcrumb li{
+    display: inline;
+}
+
+ul.breadcrumb li a{
+    text-decoration: none;
+    color: var(--txtcolor2);
+}
+
+/* Laver / mellem alle a-tags */
+ul.breadcrumb li+li:before{
+    padding: 8px;
+    content: "/\00a0";
+    color: var(--txtcolor2);
+}
+
+ul.breadcrumb li a:hover{
+    color: var(--txtcolor1);
+    text-decoration: none;
+}
+/* Brødkrummesti css slutter. */
+
+@media screen and (min-width: 8000px){
+    body {
+        margin-inline: 15vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

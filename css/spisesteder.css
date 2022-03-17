@@ -1,0 +1,15 @@
+:root{
+    --maincolor: #00bf6f;
+    --secondarycolor: #ffffff;
+    --thirdcolor: #f3f3f3;
+    --footercolor: #11403d;
+    --black: #000000;
+    --innershdw: inset 3px 4px 6px rgb(0, 0, 0, 0.3);
+    --outershdw: 3px 4px 6px rgb(0, 0, 0, 0.3);
+    --txtcolor1: #000000;
+    --txtcolor2: #707070;
+}
+
+@media only screen and (min-width: 960px) {
+
+}
