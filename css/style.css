@@ -145,6 +145,7 @@ nav ul li a{
   text-align: center;
 }
 .headerimg{
+  max-width: 100%;
   max-height: 100%;
   filter: brightness(66%);
 }
@@ -158,6 +159,7 @@ nav ul li a{
 }
 .headerh2{
   color: var(--secondarycolor);
+  font-size: 1.3rem;
   position: absolute;
   top: 75%;
   left: 50%;
@@ -166,6 +168,7 @@ nav ul li a{
 /*--Galleri--*/
 .galleri{
   background-color: var(--thirdcolor);
+  padding: 5.5rem;
 }
 .bubberknap{
   color: var(--secondarycolor);
@@ -173,11 +176,20 @@ nav ul li a{
   text-align: center;
   text-decoration: none;
   background-color: var(--maincolor);
-  margin-top: 5rem;
   padding: 1.25rem;
-  margin-left: 5rem;
   border-radius: 45px;
 }
+
+/*--Årstider--*/
+.aarstider{
+  margin-top: 5rem;
+}
+.aarsh1{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
 
 /* ----- Spisesteder ----- */
 .spisheader{
