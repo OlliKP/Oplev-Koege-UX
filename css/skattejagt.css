@@ -93,7 +93,7 @@ nav ul li a{
 
 /* Navbar slutter */
 
-h1{
+.skattejagt-h1{
     font-size: 2rem;
     font-family: var(--mainfont);
     text-align: center;

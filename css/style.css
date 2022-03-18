@@ -222,10 +222,6 @@ nav ul li a{
     justify-content: center;
   }
 
-  .extra-margin {
-    margin-bottom: 12rem;
-  }
-
   .dropdown-content {
     display: none;
     position: absolute;
