@@ -303,7 +303,7 @@ nav ul li a{
   }
 
   .extra-margin {
-    margin-bottom: 9rem;
+    margin-bottom: 12rem;
   }
 
   .dropdown-content {
@@ -414,6 +414,7 @@ nav ul li a{
   border-radius: 50px;
   padding: 0;
   display: flex;
+  cursor: pointer;
 }
   
   .sort-slider a.active {
