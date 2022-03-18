@@ -168,7 +168,19 @@ nav ul li a{
 /*--Galleri--*/
 .galleri{
   background-color: var(--thirdcolor);
-  padding: 5.5rem;
+  padding: 3.3rem;
+}
+.galleribox{
+  padding: 1.1rem;
+}
+.bookbtn{
+  color: var(--maincolor);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--secondarycolor);
+  padding: 0.25rem;
+  border-radius: 45px;
 }
 .bubberknap{
   color: var(--secondarycolor);
