@@ -167,6 +167,12 @@ li a {
       display: none;
 }
 
+.main-nav-li {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+}
+
 .main-nav li {
     border-right: 0px;
     padding-top: 1rem;
