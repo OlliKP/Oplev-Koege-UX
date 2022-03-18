@@ -1,3 +1,6 @@
+*{
+  margin: 0px;
+}
 :root{
     --maincolor: #00bf6f;
     --secondarycolor: #ffffff;
@@ -142,23 +145,21 @@ nav ul li a{
   text-align: center;
 }
 .headerimg{
-  max-width: 100%;
   max-height: 100%;
-  filter: brightness(75%);
+  filter: brightness(66%);
 }
 .headerh1{
   color: var(--secondarycolor);
   position: absolute;
-  top: 12.5%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-bottom: none;
   text-transform: uppercase;
 }
 .headerh2{
   color: var(--secondarycolor);
   position: absolute;
-  top: 85%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -167,10 +168,15 @@ nav ul li a{
   background-color: var(--thirdcolor);
 }
 .bubberknap{
-  color: var(--maincolor);
+  color: var(--secondarycolor);
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  background-color: var(--maincolor);
+  margin-top: 5rem;
+  padding: 1.25rem;
+  margin-left: 5rem;
+  border-radius: 45px;
 }
 
 /* ----- Spisesteder ----- */
