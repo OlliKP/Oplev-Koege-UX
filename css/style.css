@@ -32,6 +32,7 @@ nav{
   box-shadow: 2px 3px 6px rgb(140, 139, 139);
   width: 100%;
   padding: 0.1rem;
+  z-index: 1;
 }
 
 /* UL classen under "nav" */
@@ -40,6 +41,7 @@ nav{
   background-color: var(--secondarycolor);
   font-family: var(--mainfont);
   padding: 0;
+  z-index: 1;
 }
 
 /* LOGO i navbaren */
