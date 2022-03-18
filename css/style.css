@@ -201,8 +201,18 @@ nav ul li a{
   text-align: center;
   margin-bottom: 1rem;
 }
-
-
+.foraar{
+  margin: 2rem;
+}
+.sommer{
+  margin: 2rem;
+}
+.efteraar{
+  margin: 2rem;
+}
+.vinter{
+  margin: 2rem;
+}
 
 /* ----- Spisesteder ----- */
 .spisheader{
