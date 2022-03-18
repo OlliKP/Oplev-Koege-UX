@@ -90,10 +90,8 @@ nav ul li a{
 /*Styling  af content-bokse*/
 .content-container {
   margin-top: 2rem;
-  height: 100rem;
   display: grid;
   grid-template-columns: 100%;
-  row-gap: 5%;
   padding: 2rem;
 }
 
@@ -104,6 +102,7 @@ nav ul li a{
   box-shadow: var(--outershdw);
   justify-content: center;
   align-items: center;
+  margin-bottom: 2em;
 }
 .contentimg{
   width: 100%;
