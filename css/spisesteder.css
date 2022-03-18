@@ -1,5 +1,6 @@
 :root{
     --maincolor: #00bf6f;
+    --maincolor-opa: #00bf6f1a;
     --secondarycolor: #ffffff;
     --thirdcolor: #f3f3f3;
     --footercolor: #11403d;
@@ -162,15 +163,25 @@ li a {
       justify-content: space-between;
       font-size: 1.5rem;
       margin-top: 0.5rem;
-      padding-top: 1.3rem;
+      padding-block: 1.3rem;
       border-top:1px solid rgba(132, 132, 132, 0.15);
       display: none;
+      border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+      margin-bottom: 3rem;
 }
 
 .main-nav-li {
     display: flex;
     flex-direction: column;
-    border: solid 1px;
+    border-radius: var(--borderradius);
+    box-shadow: var(--outershdw);
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+    overflow-x: hidden;
+    font-family: var(--mainfont);
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .main-nav li {
@@ -179,13 +190,34 @@ li a {
     align-items: center;
 }
 
-#filmknap {
-    border-radius: 50px;
-    border: solid 2px #04AA6D;
-    padding-block: 0.4rem;
-    padding-inline: 1.5rem;
-    background-color: white;
-    color: #04AA6D;
+.main-nav-li:hover {
+    box-shadow: var(--innershdw);
+    
+}
+
+/* Styling for current page */
+.current-page {
+    background-color: var(--maincolor);
+}
+
+.current-page a {
+    color: var(--secondarycolor);
+}
+
+.current-page img {
+    -webkit-filter: invert(100%);
+}
+
+/* Styling for vores ikoner */
+.our-icons {
+    width: 40px;
+    height: auto;
+}
+
+.round-icon {
+    border-radius: 100px;
+    padding-inline: 1rem;
+    margin-left: 14rem;
 }
 
 /* ----- Spisesteder ----- */
@@ -346,7 +378,6 @@ li a {
   background-color: #fff;
   z-index: 7;
   border-radius: 50px;
-  border: solid 1px;
   margin: 0;
 }
 
@@ -377,8 +408,8 @@ li a {
   .sort-slider a.active {
     background-color: #00BF6F;
     pointer-events: none;
-    border: solid black 1px;
     color: #fff;
+    box-shadow: var(--innershdw);
   }
 
   .spisesteder-h1 {
