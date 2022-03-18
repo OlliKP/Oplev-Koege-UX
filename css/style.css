@@ -153,6 +153,7 @@ nav ul li a{
   left: 50%;
   transform: translate(-50%, -50%);
   border-bottom: none;
+  text-transform: uppercase;
 }
 .headerh2{
   color: var(--secondarycolor);
