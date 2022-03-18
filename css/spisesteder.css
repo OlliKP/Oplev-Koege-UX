@@ -10,11 +10,26 @@
     --borderradius: 20px;
     --txtcolor1: #000000;
     --txtcolor2: #707070;
+    --lato: lato, sans-serif;
+    --helvetica: 'helvetica neue', sans-serif;
 }
 
-body {
-    
-    font-family: Arial, Helvetica, sans-serif;
+p{
+    font-family: var(--helvetica); 
+    color: var(--txtcolor2);
+    line-height: 1.4em;
+}
+h1{
+        text-align: center;
+        font-size: 3rem;
+        font-family: var(--lato);
+        text-transform: uppercase;
+}
+h4{
+    font-family: var(--helvetica); 
+    font-size: 1.2rem;
+    color: var(--txtcolor2);
+    line-height: 1.7em;
 }
 
 /* Navigation begynder */
@@ -115,9 +130,7 @@ nav ul li a{
   text-align: center;
 }
 .contentp{
-  color: var(--txtcolor2);
   padding: 0 1em 0.5em 1em;
-  line-height: 1.4em;
 }
 
 /* Topbar & Navbar */
@@ -177,7 +190,7 @@ li a {
     box-shadow: var(--outershdw);
     justify-content: center;
     align-items: center;
-    margin-left: 4rem;
+    margin-left: 3.5vw;
     overflow-x: hidden;
     font-family: var(--mainfont);
     text-transform: uppercase;
@@ -217,20 +230,11 @@ li a {
 .round-icon {
     border-radius: 100px;
     padding-inline: 1rem;
-    margin-left: 14rem;
+    float: right;
+    margin-right: 0.35em;
 }
 
 /* ----- Spisesteder ----- */
-.spisheader{
-    text-align: center;
-    font-size: 3rem;
-}
-.spisp{
-    text-align: center;
-    font-size: 1.3rem;
-    color: var(--txtcolor2)
-}
-
 .spisesteder-header {
   display: flex;
   justify-content: center;
@@ -306,6 +310,18 @@ li a {
     font-size: 2rem;
     text-align: center;
   }
+.headerflex{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.headericon{
+    width: 5vw;
+}
 
 .show-element{
     display: block;
