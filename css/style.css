@@ -19,7 +19,6 @@ body {
 /*Styling  af content-bokse*/
 .content-container {
   margin-top: 2rem;
-  height: 100rem;
   display: grid;
   grid-template-columns: 100%;
   row-gap: 5%;
@@ -49,6 +48,10 @@ body {
 }
 
 /* Topbar & Navbar */
+.top-bar-nav {
+  display: none;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -89,6 +92,7 @@ li a {
       margin-top: 0.5rem;
       padding-top: 1.3rem;
       border-top:1px solid rgba(132, 132, 132, 0.15);
+      display: none;
 }
 
 .main-nav li {
@@ -208,6 +212,7 @@ li a {
   display: flex;
 }
 
+
 /* ------ MEDIA QUERY ------ */
 
 @media only screen and (min-width: 960px) {
@@ -217,6 +222,10 @@ li a {
 
     li a:hover:not(.active) {
       top: -3px;
+  }
+
+  .top-bar-nav .main-nav {
+    display: block;
   }
 
     /* Sort-Slider */
