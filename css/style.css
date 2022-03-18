@@ -84,7 +84,6 @@ nav ul li a{
   transition: all 0.5s;
 }
 
-
 /* Navbar slutter */
 
 /*Styling  af content-bokse*/
@@ -122,127 +121,10 @@ nav ul li a{
 .top-bar-nav {
   display: none;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #fff;
-}
-  
-li {
-    float: left;
-    border-right:1px solid rgba(132, 132, 132, 0.15);
-}
-  
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 7px 16px;
-    text-decoration: none;
-    position: relative;
-    top: 0;
-    transition: top ease 0.3s;
-}
   
 .active {
     background-color: #04AA6D;
 }
-
-#nav-logo {
-   width: 140px;
-   height: auto;
-}
-
-.main-nav {
-      display: flex;
-      justify-content: space-between;
-      font-size: 1.5rem;
-      margin-top: 0.5rem;
-      padding-top: 1.3rem;
-      border-top:1px solid rgba(132, 132, 132, 0.15);
-      display: none;
-}
-
-.main-nav li {
-    border-right: 0px;
-    padding-top: 1rem;
-    align-items: center;
-}
-
-/* Navigations bar til mobil begynder */
-
-/* Fas fa-bar svg'ets (burgermenu ikonet) indstillinger */
-.fas{
-  color: black;
-  font-size: 2rem;
-  line-height: 40px;
-  float: right;
-  padding: 0.3em;
-  padding-right: 0.5em;
-}
-
-/* Navbaren begynder */
-nav{
-  box-shadow: 2px 3px 6px rgb(140, 139, 139);
-  width: 100%;
-  padding: 0.1rem;
-}
-
-/* UL classen under "nav" */
-.navbar{
-  position: fixed;
-  background-color: var(--secondarycolor);
-  font-family: var(--mainfont);
-  padding: 0;
-}
-
-/* LOGO i navbaren */
-nav img{
-  padding: 0.2rem;
-}
-
-/* UL indstillinger, bl.a. gør at vi har en transition på vores menu */
-nav ul{
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s;
-  text-align: left;
-  width: 100%;
-
-}
-
-/* List dekoration */
-nav ul li{
-  list-style-type: none;
-  color: black;
-  padding: 0.5em;
-  border-bottom: 1px solid rgb(237, 236, 236);
-  padding-top: 0.3em;
-}
-
-/* Når burgermenu'en kommer ned er det her hele a-tags dekoration */
-nav ul li a{
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 21px;
-}
-
-/* Checkbox, som er burgermenu'ens indstillinger der gør at vores menu kommer ned når man klikker */
-#checkbox{
-  display: none;
-}
-
-#checkbox:checked ~ nav ul{
-  max-height: 100%;
-  transition: all 0.5s;
-}
-
-
-/* Navbar til mobil slutter */
 
 #filmknap {
     border-radius: 50px;
