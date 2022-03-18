@@ -261,6 +261,10 @@ nav ul li a{
   display: flex;
 }
 
+.main-nav {
+  display: none;
+}
+
 
 /* ------ MEDIA QUERY ------ */
 
