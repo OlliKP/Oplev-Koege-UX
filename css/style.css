@@ -344,7 +344,9 @@ nav ul li a{
 .main-nav {
   display: none;
 }
-
+.mobileonly{
+  display: none;
+}
 
 /* ------ MEDIA QUERY ------ */
 
@@ -429,14 +431,20 @@ nav ul li a{
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  .bubberknap{
-    margin-top: 2rem;
-    margin-inline: auto;
-    width: 30%;
+  .mobileonly{
+    display: block;
   }
   .galleribox{
     margin-inline: auto;
     margin-left: 10rem;
     margin-right: 10rem;
+  }
+  .bubberknap{
+    margin-top: 2rem;
+    margin-inline: auto;
+    width: 30%;
+  }
+  .bubberknap a{
+    color: var(--secondarycolor);
   }
 }
