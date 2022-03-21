@@ -367,20 +367,20 @@ li a {
 
     li a:hover:not(.active) {
       top: -3px;
-  }
+    }
 
   .top-bar-nav .main-nav {
     display: block;
-  }
+    }
 
   .header-spisesteder {
       display: block;
       margin-bottom: 4rem;
-  }
+    }
 
   .spisesteder-header {
     display: none;
-}
+    }
 
     /* Sort-Slider */
 .sort-slider {

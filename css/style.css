@@ -217,6 +217,8 @@ nav ul li a{
   background-color: var(--maincolor);
   padding: 1.25rem;
   border-radius: 45px;
+  margin-inline: auto;
+  margin-top: 2rem;
 }
 
 /*--Årstider--*/
@@ -421,5 +423,20 @@ nav ul li a{
     column-gap: 10%;
     row-gap: 0;
     grid-template-columns: 45% 45%;
+  }
+  /*--Index--*/
+  .aarstider{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .bubberknap{
+    margin-top: 2rem;
+    margin-inline: auto;
+    width: 30%;
+  }
+  .galleribox{
+    margin-inline: auto;
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 }
