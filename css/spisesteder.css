@@ -409,11 +409,11 @@ li a {
   border-right: 0px;
   float: left;
 }
-<<<<<<< Updated upstream
 
 .sort-slider-overnatning li {
   width: 33.33%;
-=======
+}
+
 .kulturslider li {
   width: 20%;
   height: 100%;
@@ -421,7 +421,6 @@ li a {
   padding: 0;
   border-right: 0px;
   float: left;
->>>>>>> Stashed changes
 }
     
 .sort-slider a {
