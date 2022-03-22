@@ -5,6 +5,8 @@ $(".sort-all").click(function () {
   $(".sort-family").removeClass("active");
   $(".sort-adult").removeClass("active");
   $(".sort-cafe").removeClass("active");
+  $(".sort-hotel").removeClass("active");
+  $(".sort-camping").removeClass("active");
 });
 
 $(".sort-family").click(function () {
@@ -26,6 +28,18 @@ $(".sort-cafe").click(function () {
   $(".sort-family").removeClass("active");
   $(".sort-adult").removeClass("active");
   $(".sort-cafe").addClass("active");
+});
+
+$(".sort-hotel").click(function () {
+  $(".sort-all").removeClass("active");
+  $(".sort-hotel").addClass("active");
+  $(".sort-camping").removeClass("active");
+});
+
+$(".sort-camping").click(function () {
+  $(".sort-all").removeClass("active");
+  $(".sort-hotel").removeClass("active");
+  $(".sort-camping").addClass("active");
 });
 
 

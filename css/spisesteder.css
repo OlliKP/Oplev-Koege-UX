@@ -406,6 +406,10 @@ li a {
   border-right: 0px;
   float: left;
 }
+
+.sort-slider-overnatning li {
+  width: 33.33%;
+}
     
 .sort-slider a {
   width: 100%;
