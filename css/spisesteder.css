@@ -19,6 +19,9 @@ p{
     color: var(--txtcolor2);
     line-height: 1.4em;
 }
+.info-p{
+      padding-inline: 1em;
+}
 h1{
         text-align: center;
         font-size: 3rem;
@@ -406,9 +409,19 @@ li a {
   border-right: 0px;
   float: left;
 }
+<<<<<<< Updated upstream
 
 .sort-slider-overnatning li {
   width: 33.33%;
+=======
+.kulturslider li {
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-right: 0px;
+  float: left;
+>>>>>>> Stashed changes
 }
     
 .sort-slider a {
