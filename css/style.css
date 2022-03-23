@@ -394,10 +394,14 @@ color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .galleribox {
+    width: 27%;
   }
 
   .gallery-arrows{
