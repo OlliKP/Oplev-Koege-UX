@@ -302,6 +302,22 @@ ul.breadcrumb li a:hover{
 
 .show-element{
     display: block;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 2rem;
+    float: right;
+    background-color: var(--secondarycolor);
+    color: var(--maincolor);
+    border: none;
+    border-radius: 65px;
+    box-shadow: var(--outershdw);
+}
+.info-btn:hover{
+    color: var(--secondarycolor);
+    background-color: var(--maincolor);
+    box-shadow: var(--innershdw);
 }
 
     /* Utility classes */
