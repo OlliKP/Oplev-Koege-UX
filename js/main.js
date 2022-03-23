@@ -72,6 +72,25 @@ $(".sort-cafe").click(function () {
   $(".cafe").removeClass("hide-element");
 });
 
+// Overnatning Categories
+
+$(".sort-all").click(function () {
+  $(".hotel").removeClass("hide-element");
+  $(".camping").removeClass("hide-element");
+});
+
+$(".sort-hotel").click(function () {
+  $(".camping").addClass("hide-element");
+
+  $(".hotel").removeClass("hide-element");
+});
+
+$(".sort-camping").click(function () {
+  $(".hotel").addClass("hide-element");
+
+  $(".camping").removeClass("hide-element");
+});
+
 
 /*dropdown menu ekstra margin-bottom*/
 $(".dropbtn").click(function () {
