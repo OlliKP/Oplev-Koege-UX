@@ -298,6 +298,7 @@ ul.breadcrumb li a:hover{
     border: 0px;
     color: white;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .show-element{
@@ -445,7 +446,6 @@ ul.breadcrumb li a:hover{
   background-color: #fff;
   z-index: 7;
   border-radius: 50px;
-  border: solid 1px;
   margin: 0;
 }
 
@@ -477,7 +477,6 @@ ul.breadcrumb li a:hover{
   .sort-slider a.active {
     background-color: #00BF6F;
     pointer-events: none;
-    border: solid black 1px;
     color: #fff;
   }
 
