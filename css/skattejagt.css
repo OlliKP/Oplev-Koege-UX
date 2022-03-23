@@ -180,9 +180,21 @@ ul.breadcrumb li a:hover{
 .info-btn{
     text-transform: uppercase;
     font-size: 2rem;
-    padding: 0.5rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin: 2rem;
     float: right;
+    background-color: var(--secondarycolor);
+    color: var(--maincolor);
+    border: none;
+    border-radius: 65px;
+    box-shadow: var(--outershdw);
+}
+.info-btn:hover{
+    color: var(--secondarycolor);
+    background-color: var(--maincolor);
+    box-shadow: var(--innershdw);
 }
 
 @media screen and (min-width: 800px){
