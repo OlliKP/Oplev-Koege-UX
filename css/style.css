@@ -426,8 +426,8 @@ color: inherit;
   background-color: #fff;
   z-index: 7;
   border-radius: 50px;
-  border: solid 1px;
   margin: 0;
+ 
 }
 
 .sort-slider li {
@@ -458,7 +458,7 @@ color: inherit;
   .sort-slider a.active {
     background-color: #00BF6F;
     pointer-events: none;
-    border: solid black 1px;
+   
     color: #fff;
   }
 
