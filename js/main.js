@@ -6,7 +6,8 @@ $(".sort-all").click(function () {
   $(".sort-adult").removeClass("active");
   $(".sort-cafe").removeClass("active");
   $(".sort-hotel").removeClass("active");
-  $(".sort-camping").removeClass("active");
+  $(".sort-city").removeClass("active");
+  $(".sort-music").removeClass("active");
 });
 
 $(".sort-family").click(function () {
@@ -14,6 +15,8 @@ $(".sort-family").click(function () {
   $(".sort-family").addClass("active");
   $(".sort-adult").removeClass("active");
   $(".sort-cafe").removeClass("active");
+  $(".sort-city").removeClass("active");
+  $(".sort-music").removeClass("active");
 });
 
 $(".sort-adult").click(function () {
@@ -21,6 +24,8 @@ $(".sort-adult").click(function () {
   $(".sort-family").removeClass("active");
   $(".sort-adult").addClass("active");
   $(".sort-cafe").removeClass("active");
+  $(".sort-city").removeClass("active");
+  $(".sort-music").removeClass("active");
 });
 
 $(".sort-cafe").click(function () {
@@ -28,6 +33,22 @@ $(".sort-cafe").click(function () {
   $(".sort-family").removeClass("active");
   $(".sort-adult").removeClass("active");
   $(".sort-cafe").addClass("active");
+});
+
+$(".sort-city").click(function () {
+  $(".sort-all").removeClass("active");
+  $(".sort-family").removeClass("active");
+  $(".sort-adult").removeClass("active");
+  $(".sort-city").addClass("active");
+  $(".sort-music").removeClass("active");
+});
+
+$(".sort-music").click(function () {
+  $(".sort-all").removeClass("active");
+  $(".sort-family").removeClass("active");
+  $(".sort-adult").removeClass("active");
+  $(".sort-city").removeClass("active");
+  $(".sort-music").addClass("active");
 });
 
 $(".sort-hotel").click(function () {
@@ -42,6 +63,47 @@ $(".sort-camping").click(function () {
   $(".sort-camping").addClass("active");
 });
 
+
+// Kultur og Oplevelser Categories
+
+$(".sort-all").click(function () {
+  $(".family").removeClass("hide-element");
+  $(".adult").removeClass("hide-element");
+  $(".city").removeClass("hide-element");
+  $(".music").removeClass("hide-element");
+});
+
+$(".sort-family").click(function () {
+  $(".adult").addClass("hide-element");
+  $(".city").addClass("hide-element");
+  $(".music").addClass("hide-element");
+
+  $(".family").removeClass("hide-element");
+});
+
+$(".sort-adult").click(function () {
+  $(".family").addClass("hide-element");
+  $(".city").addClass("hide-element");
+  $(".music").addClass("hide-element");
+
+  $(".adult").removeClass("hide-element");
+});
+
+$(".sort-city").click(function () {
+  $(".family").addClass("hide-element");
+  $(".adult").addClass("hide-element");
+  $(".music").addClass("hide-element");
+
+  $(".city").removeClass("hide-element");
+});
+
+$(".sort-music").click(function () {
+  $(".family").addClass("hide-element");
+  $(".adult").addClass("hide-element");
+  $(".city").addClass("hide-element");
+
+  $(".music").removeClass("hide-element");
+});
 
 // Restaurant Categories
 
