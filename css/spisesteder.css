@@ -123,6 +123,7 @@ nav ul li a{
   justify-content: center;
   align-items: center;
   margin-bottom: 2em;
+  text-decoration: none;
 }
 .contentimg{
   width: 100%;
@@ -131,6 +132,7 @@ nav ul li a{
 }
 .contenth{
   text-align: center;
+  color: var(--txtcolor1);
 }
 .contentp{
   padding: 0 1em 0.5em 1em;

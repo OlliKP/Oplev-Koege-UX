@@ -11,6 +11,7 @@
     --txtcolor1: #000000;
     --txtcolor2: #707070;
     --mainfont: 'Lato', sans-serif;
+    --helvetica: 'helvetica neue', sans-serif;
 }
 
 *{
@@ -20,7 +21,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+    font-family: var(--mainfont);
+    text-transform: uppercase;
+}
+h2{
+    font-family: var(--mainfont);
+    text-transform: uppercase;
+}
+p{
+    font-family: var(--helvetica);
+}
+h3{
+    font-family: var(--helvetica);
 
+}
 /* Navigations bar begynder */
 
 /* Fas fa-bar svg'ets (burgermenu ikonet) indstillinger */
@@ -93,7 +108,7 @@ nav ul li a{
 
 /* Navbar slutter */
 
-.skattejagt-h1{
+.header-h1{
     font-size: 2rem;
     font-family: var(--mainfont);
     text-align: center;
@@ -132,43 +147,40 @@ ul.breadcrumb li a:hover{
 }
 /* Brødkrummesti css slutter. */
 
-.content-container {
-    margin-top: 2rem;
-    row-gap: 5%;
+.info-container {
     display: grid;
+    padding-inline: 2em;
     grid-template-columns: 100%;
-    padding: 2rem;
-
+    background-color: var(--thirdcolor);
   }
   
-.content-box {
-    background-color: var(--secondarycolor);
+.info-box {
     border-radius: 15px;
     height: fit-content;
-    box-shadow: var(--outershdw);
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
-.contentimg{
+.infoimg{
     width: 100%;
     border-radius: 15px;
     box-shadow: var(--outershdw);
 }
-.contenth{
+.infoh{
     text-align: center;
+    margin-block: 1em;
 }
-.contentp{
+.infop{
     color: var(--txtcolor2);
-    padding: 0 1em 0.5em 1em;
+    padding: 0 1em 1em 1em;
     line-height: 1.4em;
 }
 
-.content-btn{
+.info-btn{
     text-transform: uppercase;
     font-size: 2rem;
     padding: 0.5rem;
     margin: 2rem;
+    float: right;
 }
 
 @media screen and (min-width: 800px){
@@ -176,9 +188,21 @@ ul.breadcrumb li a:hover{
         margin-inline: 15vw;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .content-container {
-        column-gap: 10%;
-        row-gap: 0;
-        grid-template-columns: 45% 45%;
+    .info-container {
+        display: flex;
+      }
+      .infoimg{
+          width: 30vw; 
+      }
+      .map{
+          width: 25vw;
+          margin-left: 1em;
+      }
+      .infoh{
+          text-align: start;
+          margin-left: 0.7em;
+      }
+      .info-text{
+        margin-left: 2em;
       }
 }
