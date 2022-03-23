@@ -158,14 +158,6 @@ nav ul li a{
     background-color: #04AA6D;
 }
 
-#filmknap {
-    border-radius: 50px;
-    border: solid 2px #04AA6D;
-    padding-block: 0.4rem;
-    padding-inline: 1.5rem;
-    background-color: white;
-    color: #04AA6D;
-}
 /* ----- Index ----- */
 .indexheader{
   position: relative;
@@ -174,7 +166,8 @@ nav ul li a{
 .headerimg{
   max-width: 100%;
   max-height: 100%;
-  filter: brightness(66%);
+  object-fit: cover;
+  filter: brightness(30%)
 }
 .headerh1{
   color: var(--secondarycolor);
@@ -219,6 +212,18 @@ nav ul li a{
   border-radius: 45px;
   margin-inline: auto;
   margin-top: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--outershdw);
+  font-family: var(--mainfont);
+}
+
+.bubberknap:hover{
+  box-shadow: var(--innershdw);
+}
+
+.bubberknap a{ 
+text-decoration: none;
+color: inherit;
 }
 
 /*--Årstider--*/
@@ -367,6 +372,43 @@ nav ul li a{
     display: block;
   }
 
+  /* ------------------- INDEX PAGE ------------------- */
+
+  .headerimg {
+    width: 100%;
+    height: 300px;
+  }
+
+  .headerh1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .headerh2 {
+    padding-bottom: 6rem;
+    font-size: 1.5rem;
+  }
+
+  .galleri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery-arrows{
+    height: auto;
+  }
+
+  .aarsh1 {
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+  }
+
     /* Sort-Slider */
 .sort-slider {
   display: block;
@@ -434,11 +476,7 @@ nav ul li a{
   .mobileonly{
     display: block;
   }
-  .galleribox{
-    margin-inline: auto;
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
+
   .bubberknap{
     margin-top: 2rem;
     margin-inline: auto;
