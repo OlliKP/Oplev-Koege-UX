@@ -152,6 +152,8 @@ ul.breadcrumb li a:hover{
     padding-inline: 2em;
     grid-template-columns: 100%;
     background-color: var(--thirdcolor);
+    border-bottom: solid 3px var(--maincolor);
+    margin-bottom: 2em;
   }
   
 .info-box {
